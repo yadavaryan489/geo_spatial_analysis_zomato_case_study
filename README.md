@@ -1,96 +1,72 @@
 # geo_spatial_analysis_zomato_case_study
 # Zomato Data Analysis Project
 
-This project involves performing various data analysis tasks on Zomato data using Python. The analysis includes reading data from an SQL database, analyzing the relationship between online orders and ratings, text cleaning, n-gram analysis, extracting geographical coordinates, performing spatial analysis, and automating the spatial analysis process.
+## Project Overview
+Welcome to the "Zomato Data Analysis" project. This project offers a comprehensive analysis of Zomato data using Python. We employ various data analysis methods to uncover insights within the Zomato dataset.
 
-## Table of Contents
+## Zomato Data
+We've gathered a diverse range of data from Zomato to conduct our analysis, exploring various aspects of restaurant data, customer reviews, and geographical information. All the datasets are provided in the project repository.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Methods](#methods)
-  - [Reading Data from SQL Database](#reading-data-from-sql-database)
-  - [Analyzing Relationship Between Online Order and Rating](#analyzing-relationship-between-online-order-and-rating)
-  - [Text Cleaning](#text-cleaning)
-  - [Performing Unigram, Bi-gram, and Trigram Analysis](#performing-unigram-bi-gram-and-trigram-analysis)
-  - [Extracting Geographical Coordinates](#extracting-geographical-coordinates)
-  - [Performing Spatial Analysis](#performing-spatial-analysis)
-  - [Automating Spatial Analysis](#automating-spatial-analysis)
-- [Charts Used](#charts-used)
-- [Modules Used](#modules-used)
-- [Contributing](#contributing)
+## Problem Statement
+In this case study, we focus on various aspects of Zomato data analysis, including:
 
+1. **Data Collection and Preprocessing**
+   - Reading Data from SQL Database
 
+2. **Analyzing Relationship Between Online Order and Rating**
+   - Understanding how online orders correlate with restaurant ratings
 
-## Usage
-After installing the dependencies, you can run the analysis scripts. Make sure you have the necessary data and database credentials set up.
+3. **Text Cleaning**
+   - Cleaning the text data to remove unwanted characters, stopwords, and perform other preprocessing steps
 
-## Methods
-### 1. Reading Data from SQL Database
-This step involves connecting to the SQL database where the Zomato data is stored and fetching the necessary data for analysis. We use the sqlite3 module to interact with the database.
+4. **Performing Unigram, Bi-gram, and Trigram Analysis**
+   - Analyzing the frequency of unigrams, bi-grams, and trigrams in the text data
 
-### 2. Analyzing Relationship Between Online Order and Rating
-In this step, we analyze how online orders correlate with restaurant ratings. This involves statistical analysis and visualization using pandas, numpy, matplotlib, and seaborn.
+5. **Extracting Geographical Coordinates**
+   - Geocoding addresses or using available latitude and longitude data for spatial analysis
 
-### 3. Text Cleaning
-Text data often contains noise. This step involves cleaning the text data to remove unwanted characters, stopwords, and perform other preprocessing steps. We use RegexpTokenizer from nltk to tokenize the text and stopwords from nltk to remove common words that do not add much meaning.
+6. **Performing Spatial Analysis**
+   - Understanding the distribution and density of restaurants using interactive maps and heatmaps
 
-### 4. Performing Unigram, Bi-gram, and Trigram Analysis
-This step involves analyzing the frequency of unigrams, bi-grams, and trigrams in the text data to understand common phrases and keywords. We use FreqDist, bigrams, and trigrams from nltk for this analysis.
+7. **Automating Spatial Analysis**
+   - Automating the spatial analysis process to make it repeatable and efficient
 
-### 5. Extracting Geographical Coordinates
-We extract geographical coordinates from the data for spatial analysis. This involves geocoding addresses or using available latitude and longitude data. We use Nominatim from geopy.geocoders for geocoding.
-
-### 6. Performing Spatial Analysis
-Using the geographical coordinates, we perform spatial analysis to understand the distribution and density of restaurants, and other spatial patterns. We use folium and HeatMap from folium.plugins to create interactive maps and heatmaps.
-
-### 7. Automating Spatial Analysis
-This step involves automating the spatial analysis process to make it repeatable and efficient. Scripts are created to automate tasks like data fetching, preprocessing, and analysis.
-
-## Charts Used
-### Stacked Bar Graph:
-        Used to compare the proportions of different categories.
-### Line Graph:
-        Used to show trends over time.
-### Heatmap on Geographical Map:
-        Used to visualize the density and distribution of data points on a map.
+For detailed code explanations and analysis, please refer to the accompanying Jupyter Notebook (ipynb) files within the repository. Our primary IDE is Jupyter Notebook.
 
 ## Modules Used
-### pandas:
-        For data manipulation and analysis.
-### numpy:
-        For numerical operations.
-### matplotlib:
-        For creating static, animated, and interactive visualizations.
-### seaborn:
-        For statistical data visualization.
-### sqlite3:
-        For interacting with the SQL database.
-### warnings:
-        To manage warning messages.
-### RegexpTokenizer (from nltk):
-        For tokenizing text using regular expressions.
-### stopwords (from nltk):
-        For removing common words that do not add much meaning.
-### FreqDist (from nltk):
-        For computing the frequency distribution of terms.
-### bigrams (from nltk):
-        For creating bigrams from text.
-### trigrams (from nltk):
-        For creating trigrams from text.
-### Nominatim (from geopy.geocoders):
-        For geocoding addresses.
-### folium:
-        For creating interactive maps.
-### HeatMap (from folium.plugins):
-        For creating heatmaps on maps.
-### Contributing
-        Contributions are welcome! If you have any ideas, suggestions, or bug fixes, feel free to open an issue or submit a pull request.
+We've harnessed the power of several Python libraries for this analysis, including but not limited to:
 
-## Installation
+- `pandas`: For data manipulation and analysis, providing data structures and operations for manipulating numerical tables and time series.
+- `numpy`: For numerical operations, offering support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+- `matplotlib`: For creating static, animated, and interactive visualizations in Python.
+- `seaborn`: For statistical data visualization, built on top of matplotlib and closely integrated with pandas data structures.
+- `sqlite3`: For interacting with the SQL database, allowing us to execute SQL queries and fetch data.
+- `warnings`: To manage warning messages, allowing us to control the display of warnings.
+- `RegexpTokenizer` (from `nltk`): For tokenizing text using regular expressions, helping in text preprocessing.
+- `stopwords` (from `nltk`): For removing common words that do not add much meaning to the text analysis.
+- `FreqDist` (from `nltk`): For computing the frequency distribution of terms in the text data.
+- `bigrams` (from `nltk`): For creating bigrams from text, which are pairs of consecutive words.
+- `trigrams` (from `nltk`): For creating trigrams from text, which are triplets of consecutive words.
+- `Nominatim` (from `geopy.geocoders`): For geocoding addresses, converting them into geographical coordinates.
+- `folium`: For creating interactive maps, allowing for easy visualization of geospatial data.
+- `HeatMap` (from `folium.plugins`): For creating heatmaps on maps, showing the density of data points.
 
-To get started with this project, clone the repository and install the required dependencies:
+## Graphs and Visualizations
+Our analysis is complemented by a variety of visually engaging graphs and visualizations, such as:
 
-```bash
-git clone https://github.com/yourusername/zomato-data-analysis.git
-cd zomato-data-analysis
-pip install -r requirements.txt
+- **Stacked Bar Graphs**
+- **Line Graphs**
+- **Heatmaps on Geographical Maps**
+
+Thank you for exploring this project! Feel free to dive into the code and analysis to better understand the fascinating world of Zomato data.
+
+## Contributing
+Contributions and feedback are welcome! If you have suggestions or improvements, please open issues and submit pull requests to enhance this project.
+
+## Contact
+For questions or inquiries, please feel free to contact me at:
+
+Aryan Yadav (mailto:ayaryan489@gmail.com)
+
+
+
