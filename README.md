@@ -58,6 +58,9 @@ Our analysis is complemented by a variety of visually engaging graphs and visual
 - **Line Graphs**
 - **Heatmaps on Geographical Maps**
 
+## To acces the data visit on this link
+https://drive.google.com/drive/folders/1b8N1bJT88cxssBSnWTZa-HMtntSi47Ls?usp=sharing
+
 Thank you for exploring this project! Feel free to dive into the code and analysis to better understand the fascinating world of Zomato data.
 
 ## Contributing
